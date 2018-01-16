@@ -132,6 +132,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\NuGetODataConfig.cs" />
+    <Compile Include="BasicAuthentication\BasicAuthenticationModule.cs" />
+    <Compile Include="BasicAuthentication\Configuration\BasicAuthenticationConfigurationSection.cs" />
+    <Compile Include="BasicAuthentication\Configuration\ExcludeElementCollection.cs" />
+    <Compile Include="BasicAuthentication\Configuration\CredentialElement.cs" />
+    <Compile Include="BasicAuthentication\Configuration\CredentialElementCollection.cs" />
+    <Compile Include="BasicAuthentication\Configuration\ExcludeElement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup>
