@@ -27,9 +27,6 @@ _ReSharper*/
 *.[Rr]e[Ss]harper
 *.DotSettings.user
 
-# Publish Web Output
-*.pubxml
-
 # NuGet Packages
 **/packages/*
 packages/*
@@ -44,3 +41,4 @@ UpgradeLog*.htm
 
 # Custom
 .vs
+dist/
