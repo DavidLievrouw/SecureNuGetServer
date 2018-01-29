@@ -117,7 +117,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BasicAuth.config" />
-    <Content Include=".well-known\acme-challenge\index.txt" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
@@ -133,6 +132,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AcmeChallengeHandler.cs" />
     <Compile Include="App_Start\NuGetODataConfig.cs" />
     <Compile Include="BasicAuthentication\BasicAuthenticationModule.cs" />
     <Compile Include="BasicAuthentication\Configuration\BasicAuthenticationConfigurationSection.cs" />
