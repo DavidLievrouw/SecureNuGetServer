@@ -117,6 +117,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BasicAuth.config" />
+    <Content Include=".well-known\acme-challenge\index.txt" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
