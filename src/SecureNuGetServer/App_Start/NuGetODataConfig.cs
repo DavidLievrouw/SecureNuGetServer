@@ -8,23 +8,19 @@ using NuGet.Server.V2;
 
 namespace SecureNuGetServer.App_Start 
 {
-    public static class NuGetODataConfig 
+  public static class NuGetODataConfig 
 	{
-        public static void Start() 
+    public static void Start() 
 		{
-            ServiceResolver.SetServiceResolver(new DefaultServiceResolver());
-
-            var config = GlobalConfiguration.Configuration;
-
-            NuGetV2WebApiEnabler.UseNuGetV2WebApiFeed(config, "NuGetDefault", "nuget", "PackagesOData");
-
-            config.Routes.MapHttpRoute(
-                name: "NuGetDefault_ClearCache",
-                routeTemplate: "nuget/clear-cache",
-                defaults: new { controller = "PackagesOData", action = "ClearCache" },
-                constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get) }
-            );
-
-        }
+      ServiceResolver.SetServiceResolver(new DefaultServiceResolver());
+      var config = GlobalConfiguration.Configuration;
+      NuGetV2WebApiEnabler.UseNuGetV2WebApiFeed(config, "NuGetDefault", "nuget", "PackagesOData");
+      config.Routes.MapHttpRoute(
+        name: "NuGetDefault_ClearCache",
+        routeTemplate: "nuget/clear-cache",
+        defaults: new { controller = "PackagesOData", action = "ClearCache" },
+        constraints: new { httpMethod = new HttpMethodConstraint(HttpMethod.Get) }
+      );
     }
+  }
 }
