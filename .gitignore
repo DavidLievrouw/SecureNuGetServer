@@ -42,3 +42,4 @@ UpgradeLog*.htm
 # Custom
 .vs
 dist/
+*.pubxml
